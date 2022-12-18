@@ -1,0 +1,16 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n,prime_number;
+    cin>>n;
+    prime_number=6*n+1;
+    if(prime_number==0)
+    {
+        cout<<"Prime";
+    }
+    else
+    {
+        cout<<"Not  Prime";
+    }
+}
