@@ -1,0 +1,51 @@
+Write a C program to find the sum of elements in each row:
+
+INPUT & OUTPUT FORMAT:
+
+Input consists of 2 integers and 1 2D-array. 
+
+Integers correspond to the size of rows and columns.
+
+Output consists of 3 integers.
+
+Output consists of the values which is the sum of all the rows.
+
+Sample Input:
+
+
+3
+3
+1 2 3
+7 3 1
+7 4 1
+
+Sample Output:
+
+6
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int r,c,sum=0;
+    cin>>r>>c;
+    int a[r][c];
+    for(int i=0;i<r;i++)
+    {
+        for(int j=0;j<c;j++)
+        {
+            cin>>a[i][j];
+        }
+    }
+    for(int i=0;i<r;i++)
+    {
+        for(int j=0;j<c;j++)
+        {
+            sum=sum+a[i][j];
+        }
+        cout<<sum;
+        sum=0;
+        cout<<endl;
+    }
+    
+}
