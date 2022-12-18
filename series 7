@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n,i,m=10,c=5;
+    cin>>n;
+    cout<<m<<" "<<c<<" ";
+    for(i=2;i<=n;i++)
+    {
+        
+        if(i%2==0)
+        {
+            m=m+50;
+            cout<<m<<" ";
+        }
+        else
+        {
+            c=c+10;
+            cout<<c<<" ";
+        }
+    }
+    
+}
